@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/img3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img2"/>
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="150dp"
+            android:fontFamily="@font/allan"
+            android:text="Create your list here!"
+            android:textAlignment="center"
+            android:layout_marginEnd="10dp"
+            android:textColor="#091450"
+            android:textSize="48sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="type here..."
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="#145588"
+            android:fontFamily="@font/prompt_bold"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#145588"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/prompt_bold"
+            android:text="Delete All" />
+
+    </LinearLayout>
+    
+    <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#000000" />
+</LinearLayout>
